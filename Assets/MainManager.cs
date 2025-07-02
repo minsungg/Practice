@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 public class MainManager : MonoBehaviour
 {
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
     public int number;
 
     private void Awake()
